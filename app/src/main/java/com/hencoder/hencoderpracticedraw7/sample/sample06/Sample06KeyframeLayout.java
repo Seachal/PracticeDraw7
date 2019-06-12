@@ -44,7 +44,7 @@ public class Sample06KeyframeLayout extends RelativeLayout {
                 PropertyValuesHolder holder = PropertyValuesHolder.ofKeyframe("progress", keyframe1, keyframe2, keyframe3);
 
                 ObjectAnimator animator = ObjectAnimator.ofPropertyValuesHolder(view, holder);
-                animator.setDuration(2000);
+                animator.setDuration(12000);
                 animator.setInterpolator(new FastOutSlowInInterpolator());
                 animator.start();
             }

@@ -12,6 +12,8 @@ import android.widget.RelativeLayout;
 
 import com.hencoder.hencoderpracticedraw7.R;
 
+
+//  hsv https://baike.baidu.com/item/HSV/547122
 public class Sample02HsvEvaluatorLayout extends RelativeLayout {
     Sample02HsvEvaluatorView view;
     Button animateBt;

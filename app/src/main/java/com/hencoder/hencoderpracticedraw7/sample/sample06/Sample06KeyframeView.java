@@ -57,10 +57,12 @@ public class Sample06KeyframeView extends View {
         paint.setStrokeCap(Paint.Cap.ROUND);
         paint.setStrokeWidth(dpToPixel(15));
         arcRectF.set(centerX - radius, centerY - radius, centerX + radius, centerY + radius);
+//        canvas.drawRect(arcRectF,paint); 画弧线时，为什么要传入一个矩形区域？ 限制弧线在矩形区域内。
         canvas.drawArc(arcRectF, 135, progress * 2.7f, false, paint);
 
         paint.setColor(Color.WHITE);
         paint.setStyle(Paint.Style.FILL);
         canvas.drawText((int) progress + "%", centerX, centerY - (paint.ascent() + paint.descent()) / 2, paint);
+
     }
 }
